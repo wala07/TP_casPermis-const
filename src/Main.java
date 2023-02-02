@@ -12,13 +12,13 @@ public class Main {
         Deposant deposant1 = new Deposant("wala","ben","homme","bendhiabwalla@gmail.com",adresse1);
         System.out.println(deposant1.toString());
         Architecte architecte1= new Architecte("gogo","pargzy","szaezar",false, adresse1,"0606060606");
-
+   /*
         System.out.println(" ARAYLIST");
-        ArrayList<Architecte> liste = new ArrayList<Architecte>();
+        ArrayList<Architecte> liste = new ArrayList<Architecte>();   ///TEST ARRAYLIST (ne veut pas fontionner )
         ArrayList<Deposant> liste = new ArrayList<Deposant>();
         liste.add(deposant1);
-        liste.add(architecte1);
-
+      //  liste.add(architecte1);
+*/
 
     }
 }

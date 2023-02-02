@@ -10,14 +10,14 @@ public class Deposant extends  Personne{
 
     public Deposant(String nom, String prenom,String cevilite , String mail , Adresse Adresse  ) {
         super(nom, prenom);
-        this.cevilite = cevilite;
-                this.mail= mail;
+        this.cevilite = validate(cevilite,50);
+                this.mail= validate(mail,50);
                         this.Adresse= Adresse;
     }
 
     @Override
     public String toString() {
-        return "Deposant{" + "cevilite='" + cevilite + '\'' + ", mail='" + mail + '\'' + ", Adresse='" + Adresse + '\'' + '}';
+        return "cevilite : " + this.cevilite + '\'' + ", mail : " + this.mail + '\'' + this.Adresse.toString() + '}';
     }
 
 

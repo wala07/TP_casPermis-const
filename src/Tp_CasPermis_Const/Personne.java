@@ -3,8 +3,8 @@ package Tp_CasPermis_Const;
 
 
 abstract class Personne {
-    private String nom;
-    private String prenom;
+    protected String nom;
+    protected String prenom;
     private boolean validate;
 
 
@@ -14,7 +14,7 @@ abstract class Personne {
         this.prenom = validate(prenom, 50);
     }
 
-    private String validate(String chaine, Integer taille) {
+    public String validate(String chaine, Integer taille) {
         if ( chaine.length() > taille ) {
          chaine = chaine.substring(0, 50);
 
